@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product portfolio - Rabbit Shiu</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/category.css">
+ <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+ <link rel="shortcut icon" href="./images1/anhsach/logoRp1.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Rabbit Shiu - Buy books and get rich</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+                                     Q&A</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Guide</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Register</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Log in</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="index.html" class="header__logo-link">
+                                <img src="./images1/anhsach/logoRp1.jpg" alt="Logo" class="header__logo-img">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="categorySelect" class="header__search-select">
+                            <option value="0">All</option>
+                            <option value="1">Vietnamese book</option>
+                            <option value="2">Foreign books</option>
+                            <option value="3">Manga-Comic</option>
+                            
+                        </select>
+                        <input type="text" id ="productNameSelect"class="header__search-input" placeholder="Search here...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon"></i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Call for advice
+                            </div>
+                            <div class="header__call-number">
+                                0867.02.01.02
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
+                        <div class="header__cart-icon-wrap">
+                            <span class="header__notice">4</span>
+                            <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Product portfolio</div>
+                    </div>
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Domestic Books</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Foreign Books</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Manga - Comic</a>
+                            </li>                          
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- category 1: Sách trong nước-->
+    <section id ='category1' class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        Vietnamese book
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./tuoithodudoi2.html">
+                            <img src="./images1/product/ttdd1.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./tuoithodudoi2.html"  class="product__panel-link">Intense Childhood - Episode 2 (2019 Reissue)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            80.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            69.000đ
+                        </span>
+                    </div>  
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./conmeo.html">
+                            <img src="./images1/product/conmeo1.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./conmeo.html" class="p-name product__panel-link">The Story of the Cat that Teaches Seagulls to Fly</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            49.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            34.300đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./cogai.html">
+                            <img src="./images1/product/cogai1.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./cogai.html" class="product__panel-link">I like a girl but I don't dare to ask</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide 
+                        ">
+                            109.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            70.000đ
+                        </span>
+                    </div>
+                </div>
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./conchim.html">
+                            <img src="./images1/product/conchim1.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./conchim.html" class=" product__panel-link">Blue Bird Returns - Comes with 6 Postcards</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            150.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            112.500đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./5s.html">
+                            <img src="./images1/product/5s1.jpg" alt="" class="product__panel-img" >
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./5s.html" class="product__panel-link">5 Centimeters Per Second</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            50.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            39.500đ
+                        </span>
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./hanhphuc.html">
+                            <img src="./images1/product/hp1.jpg" alt="" class="product__panel-img" >
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./hanhphuc.html" class="product__panel-link">To Binh Yen Draw Happiness 
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            78.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            63.960đ
+                        </span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category 2: Sách nước ngoài-->
+    <section  id ='category2' class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        Foreign Books
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./grammar.html">
+                            <img src="./images1/product/grammar1.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./grammar.html" class="product__panel-link">English Grammar in Use Book with Answer	</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <!-- product__panel-price-old-hide -->
+                        <span class="product__panel-price-old "> 
+                            178.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            169.100đ
+                        </span>
+                    </div>  
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./OPD.html">
+                            <img src="./images1/product/OPD1.jpg" alt="" class="product__panel-img" >
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./OPD.html" class="product__panel-link">TOxford Picture Dictionary Third Edition: English - Vietnamese Edition 
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            307.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            291.650đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./IL3.html">
+                            <img src="./images1/product/image_195509_1_22278.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./IL3.html" class="product__panel-link">Mindset For IELTS Level 3 Student's Book With Testbank And Online Modules</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old  ">
+                            395.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            375.250đ
+                        </span>
+                    </div>
+
+                    <div class="product__panel-price-sale-off">
+                        -5%
+                    </div> 
+                </div>
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./Sapiens.html">
+                            <img src="./images1/product/Sapiens1.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./Sapiens.html" class="product__panel-link">Sapiens : A Brief History of Humankind</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            249.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            224.100đ
+                        </span>
+                    </div> 
+
+                     <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./ElonMusk.html">
+                            <img src="images1/category/image_140812.jpg" alt="" class="product__panel-img" >
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./ElonMusk.html" class="product__panel-link">Elon Musk: How the Billionaire CEO of SpaceX and Tesla is Shaping our Future</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            112.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            100.800đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./FindMe.html">
+                            <img src="./images1/product/findme10.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./FindMe.html" class="product__panel-link">Tìm Em Nơi Anh - Find Me</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            115.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            94.300đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -5%
+                    </div>  -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- category 3: Manga - Comics-->
+    <section  id ='category3'class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        Manga - Comics
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./hvah3.html">
+                            <img src="./images1/product/hvah3.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./hvah3.html" class="product__panel-link">My Hero Academia - Episode 3: All Might</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            20.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            18.000đ
+                        </span>
+                    </div>  
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./hvah5.html">
+                            <img src="./images1/product/hocvienanhhung5.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./hvah5.html" class="product__panel-link">My Hero Academia - Episode 5: Todoroki Shoto: The Beginning</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            20.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            18.000đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./hocvienanhhung.html">
+                            <img src="./images1/product/hocvienanhhung27.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./hocvienanhhung.html" class="product__panel-link">My Hero Academia - Episode 27: One's Justice</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            20.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            18.000đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -10%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./mp3.html">
+                            <img src="./images1/product/mp3.jpg" alt="" class="product__panel-img">
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./mp3.html" class="product__panel-link">Mob Psycho 100 - Episode 3</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            30.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            27.000đ
+                        </span>
+                    </div>
+
+                    <div class="product__panel-price-sale-off">
+                        -10%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./op95.html">
+                            <img src="./images1/product/op95.jpg" alt="" class="product__panel-img" >
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./op95.html" class="product__panel-link">One Piece - Volume 95 (Sleeve Cover)</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            19.500đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            16.575đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -15%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <a href="./tgdq12.html">
+                            <img src="./images1/product/tgdq12.jpg" alt="" class="product__panel-img" >
+                        </a>
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="./tgdq12.html" class="product__panel-link">The Demon Slayer - Episode 12: The Gathering of the High Priests
+                        </a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            25.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            63.960đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                        <h4 class="footer__top-intro-heading">
+                            About us
+                        </h4>
+                        <div class="footer__top-intro-content">
+                            Rabbit - Shiu is a store that always provides you with knowledge, knowledge and passion for reading all over the country. We will continuously update the best, newest and best quality books to help readers have the best ideas. Best book to read! <br> <br>
+                            Phone: 0867.02.01.02 <br>
+                            Email: tuanthanhdo2002@gmail.com <br>
+                            Zalo:  0862.566.849 <br>
+                        </div>
+                    </article>
+
+                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="footer__top-policy-heading">
+                            Purchase Policy
+                        </h4>
+
+                        <ul class="footer__top-policy-list">
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Order form</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Payments</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Shipping method</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Return Policy</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">User manual</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                        <h4 class="footer__top-contact-heading">
+                            Hotline contact
+                        </h4>
+
+                        <div class="footer__top-contact">
+                            <div class="footer__top-contact-icon">
+                                <img src="images/phone_top.png" class="footer__top-contact-img">
+                            </div>
+
+                            <div class="footer__top-contact-phone-wrap">
+                                <div class="footer__top-contact-phone">
+                                    0867.02.01.02
+                                </div>
+                                <div class="footer__top-contact-des">
+                                    (Answer questions 24/7)
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <h4 class="footer__top-contact-heading">
+                            Connect with us
+                        </h4>
+
+                        <div class="footer__top-contact-social">
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/facebook.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/youtube.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/tiktok.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/zalo.png">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <span class="footer__bottom-content">by Do Thanh Tuan</span>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- end footer -->
+    <!-- scroll to top -->
+  <!-- score-top-->
+
+<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></i></button>
+    <!--  -->
+    
+    <script src="js/jq.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>
