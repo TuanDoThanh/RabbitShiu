@@ -1,764 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posts</title>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/post.css">
-    <link rel="shortcut icon" href="./images1/anhsach/logoRp1.jpg" type="image/x-icon">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/post.css" />
+    <link
+      rel="shortcut icon"
+      href="./images1/anhsach/logoRp1.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- header -->
     <header id="header">
-        <!-- header top -->
-        <div class="header__top">
-            <div class="container">
-                <section class="row flex">
-                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
-                        <span>Rabbit Shiu - Buy books and get rich!</span>
-                    </div>
-
-                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
-                        <ul class="header__top-list">
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">
-                                    Q&A</a>
-                            </li>
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">Guide</a>
-                            </li>
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">Register</a>
-                            </li>
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">Log in</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
+      <!-- header top -->
+      <div class="header__top">
+        <div class="container">
+          <section class="row flex">
+            <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+              <span>Rabbit Shiu - Buy books and get rich!</span>
             </div>
+
+            <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+              <ul class="header__top-list">
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link"> Q&A</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Guide</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Register</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Log in</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
         </div>
-        <!--end header top -->
+      </div>
+      <!--end header top -->
 
-        <!-- header bottom -->
-        <div class="header__bottom">
-            <div class="container">
-                <section class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
-                        <h1 class="header__heading">
-                            <a href="#" class="header__logo-link">
-                                <img src="./images1/anhsach/logoRp1.jpg" alt="Logo" class="header__logo-img">
-                            </a>
-                        </h1>
-                    </div>
-
-                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
-                        <select name="" id="" class="header__search-select">
-                            <option value="0">All</option>
-                            <option value="1">Vietnamese book</option>
-                            <option value="2">Foreign books</option>
-                            <option value="3">Manga-Comic</option>
-                            
-                        </select>
-                        <input type="text" class="header__search-input" placeholder="Search here...">
-                        <button class="header__search-btn">
-                            <div class="header__search-icon-wrap">
-                                <i class="fas fa-search header__search-icon"></i>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
-                        <div class="header__call-icon-wrap">
-                            <i class="fas fa-phone-alt header__call-icon"></i>  
-                        </div>
-                        <div class="header__call-info">
-                            <div class="header__call-text">
-                                Call for advice
-                            </div>
-                            <div class="header__call-number">
-                                0867.02.01.02
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
-                        <div class="header__cart-icon-wrap">
-                            <span class="header__notice">4</span>
-                            <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
-                        </div>
-                    </a>
-                </section>
-            </div>   
-        </div>
-        <!--end header bottom -->
-
-        <!-- header nav -->
-        <div class="header__nav">
-            <div class="container">
-                <section class="row">
-                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
-                        <i class="fas fa-bars header__nav-menu-icon"></i>
-                        <div class="header__nav-menu-title">Product portfolio</div>
-                    </div>
-
-                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item">
-                                <a href="index.html" class="header__nav-link">Home page</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="category.html" class="header__nav-link">Product portfolio</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="product.html" class="header__nav-link">Product</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="post.html" class="header__nav-link">Posts</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="contact.html" class="header__nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+      <!-- header bottom -->
+      <div class="header__bottom">
+        <div class="container">
+          <section class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+              <h1 class="header__heading">
+                <a href="#" class="header__logo-link">
+                  <img
+                    src="./images1/anhsach/logoRp1.jpg"
+                    alt="Logo"
+                    class="header__logo-img"
+                  />
+                </a>
+              </h1>
             </div>
+
+            <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+              <select name="" id="" class="header__search-select">
+                <option value="0">All</option>
+                <option value="1">Vietnamese book</option>
+                <option value="2">Foreign books</option>
+                <option value="3">Manga-Comic</option>
+              </select>
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="Search here..."
+              />
+              <button class="header__search-btn">
+                <div class="header__search-icon-wrap">
+                  <i class="fas fa-search header__search-icon"></i>
+                </div>
+              </button>
+            </div>
+
+            <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+              <div class="header__call-icon-wrap">
+                <i class="fas fa-phone-alt header__call-icon"></i>
+              </div>
+              <div class="header__call-info">
+                <div class="header__call-text">Call for advice</div>
+                <div class="header__call-number">0867.02.1-000000</div>
+              </div>
+            </div>
+
+            <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
+              <div class="header__cart-icon-wrap">
+                <span class="header__notice">4</span>
+                <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+              </div>
+            </a>
+          </section>
         </div>
+      </div>
+      <!--end header bottom -->
+
+      <!-- header nav -->
+      <div class="header__nav">
+        <div class="container">
+          <section class="row">
+            <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+              <i class="fas fa-bars header__nav-menu-icon"></i>
+              <div class="header__nav-menu-title">Product portfolio</div>
+            </div>
+
+            <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="index.html" class="header__nav-link">Home page</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="category.html" class="header__nav-link"
+                    >Product portfolio</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="product.html" class="header__nav-link">Product</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="post.html" class="header__nav-link">Posts</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="contact.html" class="header__nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     </header>
     <!--end header nav -->
-    
+
     <!-- posts -->
     <section class="posts">
-        <div class="container">
-            <div class="row pc">
-                <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
-                    <ul class="menu__list">
-                        <li class="menu__item menu__item--active">
-                            <a href="#" class="menu__link">
-                            <img src="images1/item/baby-boy.png" alt=""  class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
-                            Vietnamese book</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                            <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
-                            Foreign books</a>
-                        </li>
-                      
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt="" class="menu__item-icon"  viewBox="0 0 512 512" width="1012" height="512">
+      <div class="container">
+        <div class="row pc">
+          <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link">
+                  <img
+                    src="images1/item/baby-boy.png"
+                    alt=""
+                    class="menu__item-icon"
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="512"
+                    viewBox="0 0 512 512"
+                    width="512"
+                  />
+                  Vietnamese book</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img
+                    src="images1/item/translation.png"
+                    alt=""
+                    class="menu__item-icon"
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="512"
+                    viewBox="0 0 512 512"
+                    width="512"
+                  />
+                  Foreign books</a
+                >
+              </li>
 
-                            Manga - Comic</a>
-                        </li>
-                      
-                    </ul>
-                </nav>
-<!-- score-top-->
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img
+                    src="images1/item/1380754_batman_comic_hero_superhero_icon.png"
+                    alt=""
+                    class="menu__item-icon"
+                    viewBox="0 0 512 512"
+                    width="1012"
+                    height="512"
+                  />
 
-<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-                <div class="breadcrumbs col-lg-12 col-md-12 col-sm-12">
-                    Home page &raquo <span class="breadcrumbs__active">Posts</span>
+                  Manga - Comic</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- score-top-->
+
+          <button onclick="topFunction()" id="myBtn-scroll" title="Go to top">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <div class="breadcrumbs col-lg-12 col-md-12 col-sm-12">
+            Home page &raquo <span class="breadcrumbs__active">Posts</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <article class="post__list col-lg-9 col-md-9 col-sm-12">
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img
+                  src="images1/post/got-it-e-voucher.png"
+                  class="post__item-img"
+                />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Tips to hunt for discount voucher codes at Rabbit - Shiu
+                    </h2>
+                  </a>
                 </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">News</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Nguyễn Khánh</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  If you are having problems hunting, retrieving, use the
+                  voucher code of Rabbit - Shiu. Rest assured, this article is
+                  for you! In this article, I will share with you tips and
+                  experiences to help you hunt as many Rabbit - Shiu discount
+                  codes as possible.....
+                </div>
+              </div>
+            </div>
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img
+                  src="images1/post/hinh-ghep-15986994500641611959184.jpg"
+                  class="post__item-img"
+                />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      How to distinguish real and fake books accurately?
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">News</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Thiên Thạch</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  In order for readers, parents, students and teachers... not to
+                  buy fake reference books, pirated books, I will guide you on
+                  how to distinguish real and fake books quickly and accurately.
+                  If you pay close attention, you can tell the fake books right
+                  away. With fake books when holding in hand, it will feel
+                  softer, not as hard and firm as real books...
+                </div>
+              </div>
+            </div>
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img
+                  src="images1/post/cach-su-dung-ma-giam-gia-hieu-qua-tai-vnreviews.png"
+                  class="post__item-img"
+                />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      How to use Rabbit - Shiu discount code
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">News</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Gia Bảo</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Once you get the code, of course you have to know how to use
+                  it. Basically, Rabbit - Shiu allows you to use 3 types of
+                  discount codes that I mentioned above in the same order.
+                  Consists of: FreeShip Code, Shop discount code, And Offers
+                  from payment partners,....
+                </div>
+              </div>
             </div>
 
-            <div class="row">
-                <article class="post__list col-lg-9 col-md-9 col-sm-12">
-                    <div class="post__item">
-                        <div class="post__item-img-wrap">
-                            <img src="images1/post/got-it-e-voucher.png" class="post__item-img">
-                        </div>
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="images1/post/images.jfif" class="post__item-img" />
+              </div>
 
-                        <div class="post__item-content">
-                            <div class="post__item-title">
-                                <a href="#" class="post__item-link">
-                                    <h2 class="post__item-heading">
-                                        Tips to hunt for discount voucher codes at Rabbit - Shiu
-                                    </h2>
-                                </a>
-                            </div>
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Instructions for returning books, refunding Rabbit - Shiu
+                    </h2>
+                  </a>
+                </div>
 
-                            <div class="posts__item-cate-wrap">
-                                <div class="posts__item-cate">
-                                    <i class="fa fa-folder posts__item-cate-icon"></i>
-                                    <div class="posts__item-cate-name">
-                                        News
-                                    </div>
-                                </div>
-                                <div class="posts__item-cate-ad">
-                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
-                                    <div class="posts__item-cate-ad-name">
-                                        Nguyễn Khánh
-                                    </div>   
-                                </div>
-                            </div>
-                            <div class="posts__item-description">
-                                If you are having problems hunting, retrieving, use the voucher code of Rabbit - Shiu. Rest assured, this article is for you! In this article, I will share with you tips and experiences to help you hunt as many Rabbit - Shiu discount codes as possible.....
-                            </div>
-                        </div>
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">News</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Chinh Phan</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Purchased on Rabbit - Shiu but the product you received is not
+                  the same as the picture, the product is defective. You think
+                  you've been cheated, you're confused as to how and decide to
+                  search google: "What to do when you want a refund on Rabbit -
+                  Shiu". This article will guide you to return Rabbit - Shiu
+                  books properly...
+                </div>
+              </div>
+            </div>
+
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img
+                  src="images1/post/62255041_667523643676350_795766940692905984_n.jpg"
+                  class="post__item-img"
+                />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Program to exchange old books for trees
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">News</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Quốc Việt</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  The project "Exchange old books - Get green trees" received a
+                  great response from everyone. Everyone hurry up to participate
+                  in the program "Green Living Day 2022" and visit booth D6
+                  (Environmental Safety Incident Response Center) to exchange
+                  knowledge and get their own potted plants. green is so cute...
+                </div>
+              </div>
+            </div>
+
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="images1/post/e2.jpg" class="post__item-img" />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Collect old books, give new joy to poor children
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">News</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Thanh Tuấn</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Today, sitting and stacking books that I have just received
+                  from Dinh Thien Ly school, they have donated and supported
+                  children in remote areas, feeling very happy. Then suddenly I
+                  remembered a lot of things. When I was a child, my family
+                  couldn't afford to read anything. But my place is in a remote
+                  area, so I lacked even more...
+                </div>
+              </div>
+            </div>
+
+            <nav class="post__pagination">
+              <ul class="post__pagination-list">
+                <li class="post__pagination-item">
+                  <a
+                    class="post__pagination-link"
+                    href="#"
+                    aria-label="Previous"
+                  >
+                    <span class="post__pagination-link-prev">&laquo;</span>
+                  </a>
+                </li>
+                <li class="post__pagination-item post__pagination-item--active">
+                  <a class="post__pagination-link" href="#">1</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">2</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">3</a>
+                </li>
+                <li class="post__pagination-item post__pagination-item--center">
+                  ...
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">9</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">10</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">11</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#" aria-label="Next">
+                    <span class="post__pagination-link-next">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+
+          <aside class="post__aside col-lg-3 col-md-3 col-sm-0">
+            <div class="post__aside-top">
+              <div class="post__aside-title">
+                <h3 class="post__aside-heading">Related Posts</h3>
+
+                <div class="post__aside-list">
+                  <div class="post__aside-item post__aside-item--no-border">
+                    <div class="post__aside-img-wrap">
+                      <img
+                        src="images1/post/62255041_667523643676350_795766940692905984_n.jpg"
+                        class="post__aside-img"
+                      />
                     </div>
-                    <div class="post__item">
-                        <div class="post__item-img-wrap">
-                            <img src="images1/post/hinh-ghep-15986994500641611959184.jpg" class="post__item-img">
-                        </div>
-
-                        <div class="post__item-content">
-                            <div class="post__item-title">
-                                <a href="#" class="post__item-link">
-                                    <h2 class="post__item-heading">
-                                        How to distinguish real and fake books accurately?
-                                    </h2>
-                                </a>  
-                            </div>
-
-                            <div class="posts__item-cate-wrap">
-                                <div class="posts__item-cate">
-                                    <i class="fa fa-folder posts__item-cate-icon"></i>
-                                    <div class="posts__item-cate-name">
-                                        News
-                                    </div>
-                                </div>
-                                <div class="posts__item-cate-ad">
-                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
-                                    <div class="posts__item-cate-ad-name">
-                                        Thiên Thạch
-                                    </div>   
-                                </div>
-                            </div>
-                            <div class="posts__item-description">
-                                In order for readers, parents, students and teachers... not to buy fake reference books, pirated books, I will guide you on how to distinguish real and fake books quickly and accurately. If you pay close attention, you can tell the fake books right away. With fake books when holding in hand, it will feel softer, not as hard and firm as real books...
-                            </div>
-                        </div>
+                    <div class="post__aside-title">
+                      <a href="#" class="post__aside-link">
+                        <h4 class="post__aside-link-heading">
+                          Program to exchange old books for trees
+                        </h4>
+                      </a>
                     </div>
-                    <div class="post__item">
-                        <div class="post__item-img-wrap">
-                            <img src="images1/post/cach-su-dung-ma-giam-gia-hieu-qua-tai-vnreviews.png" class="post__item-img">
-                        </div>
+                  </div>
 
-                        <div class="post__item-content">
-                            <div class="post__item-title">
-                                <a href="#" class="post__item-link">
-                                    <h2 class="post__item-heading">
-                                        How to use Rabbit - Shiu discount code 
-                                    </h2>
-                                </a>
-                            </div>
-
-                            <div class="posts__item-cate-wrap">
-                                <div class="posts__item-cate">
-                                    <i class="fa fa-folder posts__item-cate-icon"></i>
-                                    <div class="posts__item-cate-name">
-                                        News
-                                    </div>
-                                </div>
-                                <div class="posts__item-cate-ad">
-                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
-                                    <div class="posts__item-cate-ad-name">
-                                       Gia Bảo
-                                    </div>   
-                                </div>
-                            </div>
-                            <div class="posts__item-description">
-                                Once you get the code, of course you have to know how to use it. Basically, Rabbit - Shiu allows you to use 3 types of discount codes that I mentioned above in the same order. Consists of:
-                        FreeShip Code,
-                        Shop discount code,
-                        And Offers from payment partners,....
-                            </div>
-                        </div>
+                  <div class="post__aside-item post__aside-item--no-border">
+                    <div class="post__aside-img-wrap">
+                      <img src="images1/post/e2.jpg" class="post__aside-img" />
                     </div>
-
-                    <div class="post__item">
-                        <div class="post__item-img-wrap">
-                            <img src="images1/post/images.jfif" class="post__item-img">
-                        </div>
-
-                        <div class="post__item-content">
-                            <div class="post__item-title">
-                                <a href="#" class="post__item-link">
-                                    <h2 class="post__item-heading">
-                                        Instructions for returning books, refunding Rabbit - Shiu
-                                    </h2>
-                                </a>  
-                            </div>
-
-                            <div class="posts__item-cate-wrap">
-                                <div class="posts__item-cate">
-                                    <i class="fa fa-folder posts__item-cate-icon"></i>
-                                    <div class="posts__item-cate-name">
-                                        News
-                                    </div>
-                                </div>
-                                <div class="posts__item-cate-ad">
-                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
-                                    <div class="posts__item-cate-ad-name">
-                                        Chinh Phan
-                                    </div>   
-                                </div>
-                            </div>
-                            <div class="posts__item-description">
-                                Purchased on Rabbit - Shiu but the product you received is not the same as the picture, the product is defective. You think you've been cheated, you're confused as to how and decide to search google: "What to do when you want a refund on Rabbit - Shiu". This article will guide you to return Rabbit - Shiu books properly...
-                            </div>
-                        </div>
+                    <div class="post__aside-title">
+                      <a href="#" class="post__aside-link">
+                        <h4 class="post__aside-link-heading">
+                          Collecting old books, giving new joy to poor children
+                        </h4>
+                      </a>
                     </div>
+                  </div>
 
-                    <div class="post__item">
-                        <div class="post__item-img-wrap">
-                            <img src="images1/post/62255041_667523643676350_795766940692905984_n.jpg" class="post__item-img">
-                        </div>
-
-                        <div class="post__item-content">
-                            <div class="post__item-title">
-                                <a href="#" class="post__item-link">
-                                   <h2 class="post__item-heading">
-                                    Program to exchange old books for trees
-                                    </h2> 
-                                </a>
-                            </div>
-
-                            <div class="posts__item-cate-wrap">
-                                <div class="posts__item-cate">
-                                    <i class="fa fa-folder posts__item-cate-icon"></i>
-                                    <div class="posts__item-cate-name">
-                                        News
-                                    </div>
-                                </div>
-                                <div class="posts__item-cate-ad">
-                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
-                                    <div class="posts__item-cate-ad-name">
-                                        Quốc Việt
-                                    </div>   
-                                </div>
-                            </div>
-                            <div class="posts__item-description">
-                                The project "Exchange old books - Get green trees" received a great response from everyone. Everyone hurry up to participate in the program "Green Living Day 2022" and visit booth D6 (Environmental Safety Incident Response Center) to exchange knowledge and get their own potted plants. green is so cute...
-                            </div>
-                        </div>
+                  <div class="post__aside-item post__aside-item--no-border">
+                    <div class="post__aside-img-wrap">
+                      <img
+                        src="images1/post/hinh-ghep-15986994500641611959184.jpg"
+                        class="post__aside-img"
+                      />
                     </div>
-
-                    <div class="post__item">
-                        <div class="post__item-img-wrap">
-                            <img src="images1/post/e2.jpg" class="post__item-img">
-                        </div>
-
-                        <div class="post__item-content">
-                            <div class="post__item-title">
-                                <a href="#" class="post__item-link">
-                                    <h2 class="post__item-heading">
-                                        Collect old books, give new joy to poor children
-                                    </h2>
-                                </a>
-                            </div>
-
-                            <div class="posts__item-cate-wrap">
-                                <div class="posts__item-cate">
-                                    <i class="fa fa-folder posts__item-cate-icon"></i>
-                                    <div class="posts__item-cate-name">
-                                        News
-                                    </div>
-                                </div>
-                                <div class="posts__item-cate-ad">
-                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
-                                    <div class="posts__item-cate-ad-name">
-                                       Thanh Tuấn
-                                    </div>   
-                                </div>
-                            </div>
-                            <div class="posts__item-description">
-                                Today, sitting and stacking books that I have just received from Dinh Thien Ly school, they have donated and supported children in remote areas, feeling very happy. Then suddenly I remembered a lot of things.
-When I was a child, my family couldn't afford to read anything. But my place is in a remote area, so I lacked even more...
-                            </div>
-                        </div>
+                    <div class="post__aside-title">
+                      <a href="#" class="post__aside-link">
+                        <h4 class="post__aside-link-heading">
+                          How to distinguish real books from fake accurately
+                        </h4>
+                      </a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                    <nav class="post__pagination">
-                      <ul class="post__pagination-list">
-                        <li class="post__pagination-item">
-                          <a class="post__pagination-link" href="#" aria-label="Previous">
-                            <span class="post__pagination-link-prev">&laquo;</span>
-                          </a>
-                        </li>
-                        <li class="post__pagination-item post__pagination-item--active">
-                            <a class="post__pagination-link" href="#">1</a>
-                        </li>
-                        <li class="post__pagination-item">
-                            <a class="post__pagination-link" href="#">2</a>
-                        </li>
-                        <li class="post__pagination-item">
-                            <a class="post__pagination-link" href="#">3</a>
-                        </li>
-                        <li class="post__pagination-item post__pagination-item--center">...</li>
-                        <li class="post__pagination-item">
-                            <a class="post__pagination-link" href="#">9</a>
-                        </li>
-                        <li class="post__pagination-item">
-                            <a class="post__pagination-link" href="#">10</a>
-                        </li>
-                        <li class="post__pagination-item">
-                            <a class="post__pagination-link" href="#">11</a>
-                        </li>
-                        <li class="post__pagination-item">
-                          <a class="post__pagination-link" href="#" aria-label="Next">
-                            <span class="post__pagination-link-next">&raquo;</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                </article>
+            <div class="post__aside-bottom">
+              <h3 class="post__aside-heading">Có thể bạn thích</h3>
 
-                <aside class="post__aside col-lg-3 col-md-3 col-sm-0">
-                    <div class="post__aside-top">
-                        <div class="post__aside-title">
-                            <h3 class="post__aside-heading">
-                                Related Posts
-                            </h3>
+              <div class="post__aside-list">
+                <div class="post__aside-item post__aside-item--border">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/image_195509_1_36793.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        The Alchemist (2020 Revision)
+                      </h4>
+                    </a>
 
-                            <div class="post__aside-list">
-                                <div class="post__aside-item post__aside-item--no-border">
-                                    <div class="post__aside-img-wrap">
-                                        <img src="images1/post/62255041_667523643676350_795766940692905984_n.jpg" class="post__aside-img">
-                                    </div>
-                                    <div class="post__aside-title">
-                                        <a href="#" class="post__aside-link">
-                                            <h4 class="post__aside-link-heading">Program to exchange old books for trees</h4>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="post__aside-item post__aside-item--no-border">
-                                    <div class="post__aside-img-wrap">
-                                        <img src="images1/post/e2.jpg" class="post__aside-img">
-                                    </div>
-                                    <div class="post__aside-title">
-                                        <a href="#" class="post__aside-link">
-                                            <h4 class="post__aside-link-heading">Collecting old books, giving new joy to poor children</h4>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="post__aside-item post__aside-item--no-border">
-                                    <div class="post__aside-img-wrap">
-                                        <img src="images1/post/hinh-ghep-15986994500641611959184.jpg" class="post__aside-img">
-                                    </div>
-                                    <div class="post__aside-title">
-                                        <a href="#" class="post__aside-link">
-                                            <h4 class="post__aside-link-heading"> How to distinguish real books from fake accurately</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
                     </div>
 
-                    <div class="post__aside-bottom">
-                        <h3 class="post__aside-heading">
-                            Có thể bạn thích
-                        </h3>
-
-                        <div class="post__aside-list">
-                            <div class="post__aside-item post__aside-item--border">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/image_195509_1_36793.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading"> The Alchemist (2020 Revision)</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                            79.000đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/image_180164_2_287.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">How Much Is Youth Worth?</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                           80.000đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/ttdc01.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">The Dead Detective -Episode 1 Comes With Bookmark</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                           119.00đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="./images1/product/trituedothai1.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">Jewish Wisdom (2018 Reprint)</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                            169.000đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/cau-ma-nha-xi-hanako---tap-1.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">"You" Hanako Toilet Ghost- Episode 1</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                            22.400đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/one-22.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">One-Punch Man Episode 22: Light</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                            21.000đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/600my-hero-academia-hoc-vien-sieu-anh-hung.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">My Hero Academia- Episode 27: One's Justice</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                          19.580đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="post__aside-item">
-                                <div class="post__aside-img-wrap">
-                                    <img src="images1/product/one-piece-tap-95_chuyen-chu-du-cua-oden_1.jpg" class="post__aside-img">
-                                </div>
-                                <div class="post__aside-title">
-                                    <a href="#" class="post__aside-link">
-                                        <h4 class="post__aside-link-heading">One Piece - Episode 95 (Sleeve Cover)</h4>
-                                    </a>
-
-                                    <div class="post__aside-rate-wrap">
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                        <i class="fas fa-star post__aside-rate"></i>
-                                    </div>
-
-                                    <div class="post__aside-price">
-                                        <span class="post__aside-price-current">
-                                            16.575đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 79.000đ </span>
                     </div>
-                </aside>
-            </div>        </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/image_180164_2_287.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        How Much Is Youth Worth?
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 80.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/ttdc01.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        The Dead Detective -Episode 1 Comes With Bookmark
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 119.00đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="./images1/product/trituedothai1.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        Jewish Wisdom (2018 Reprint)
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 169.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/cau-ma-nha-xi-hanako---tap-1.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        "You" Hanako Toilet Ghost- Episode 1
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 22.400đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/one-22.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        One-Punch Man Episode 22: Light
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 21.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/600my-hero-academia-hoc-vien-sieu-anh-hung.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        My Hero Academia- Episode 27: One's Justice
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 19.580đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="images1/product/one-piece-tap-95_chuyen-chu-du-cua-oden_1.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        One Piece - Episode 95 (Sleeve Cover)
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 16.575đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
     </section>
     <!--end posts -->
 
     <!-- footer -->
     <footer>
-        <section class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
-                        <h4 class="footer__top-intro-heading">
-                            About us
-                        </h4>
-                        <div class="footer__top-intro-content">
-                            Rabbit - Shiu is a store that always provides you with knowledge, knowledge and passion for reading all over the country. We will continuously update the best, newest and best quality books to help readers have the best ideas. Best book to read! <br> <br>
-                            Phone: 0867.02.01.02 <br>
-                            Email: tuanthanhdo2002@gmail.com <br>
-                            Zalo:  0862.566.849 <br>
-                        </div>
-                    </article>
+      <section class="footer__top">
+        <div class="container">
+          <div class="row">
+            <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+              <h4 class="footer__top-intro-heading">About us</h4>
+              <div class="footer__top-intro-content">
+                Rabbit - Shiu is a store that always provides you with
+                knowledge, knowledge and passion for reading all over the
+                country. We will continuously update the best, newest and best
+                quality books to help readers have the best ideas. Best book to
+                read! <br />
+                <br />
+                Phone: 0867.02.01.02 <br />
+                Email: tuanthanhdo2002@gmail.com <br />
+                Zalo: 0862.566.849 <br />
+              </div>
+            </article>
 
-                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
-                        <h4 class="footer__top-policy-heading">
-                            Purchase Policy
-                        </h4>
+            <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+              <h4 class="footer__top-policy-heading">Purchase Policy</h4>
 
-                        <ul class="footer__top-policy-list">
-                            <li class="footer__top-policy-item">
-                                <a href="#" class="footer__top-policy-link">Order form</a>
-                            </li>
-                            <li class="footer__top-policy-item">
-                                <a href="#" class="footer__top-policy-link">Payments</a>
-                            </li>
-                            <li class="footer__top-policy-item">
-                                <a href="#" class="footer__top-policy-link">Shipping method</a>
-                            </li>
-                            <li class="footer__top-policy-item">
-                                <a href="#" class="footer__top-policy-link">Return Policy</a>
-                            </li>
-                            <li class="footer__top-policy-item">
-                                <a href="#" class="footer__top-policy-link">User manual</a>
-                            </li>
-                        </ul>
-                    </article>
+              <ul class="footer__top-policy-list">
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">Order form</a>
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">Payments</a>
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Shipping method</a
+                  >
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">Return Policy</a>
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">User manual</a>
+                </li>
+              </ul>
+            </article>
 
-                    <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
-                        <h4 class="footer__top-contact-heading">
-                            Hotline contact
-                        </h4>
+            <article
+              class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6"
+            >
+              <h4 class="footer__top-contact-heading">Hotline contact</h4>
 
-                        <div class="footer__top-contact">
-                            <div class="footer__top-contact-icon">
-                                <img src="images/phone_top.png" class="footer__top-contact-img">
-                            </div>
-
-                            <div class="footer__top-contact-phone-wrap">
-                                <div class="footer__top-contact-phone">
-                                    0867.02.01.02
-                                </div>
-                                <div class="footer__top-contact-des">
-                                    (Answer questions 24/7)
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <h4 class="footer__top-contact-heading">
-                            Connect with us
-                        </h4>
-
-                        <div class="footer__top-contact-social">
-                            <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/facebook.png">
-                            </a>
-                            <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/youtube.png">
-                            </a>
-                            <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/tiktok.png">
-                            </a>
-                            <a href="#" class="footer__top-contact-social-link">
-                                <img src="images/zalo.png">
-                            </a>
-                        </div>
-                    </article>
+              <div class="footer__top-contact">
+                <div class="footer__top-contact-icon">
+                  <img
+                    src="images/phone_top.png"
+                    class="footer__top-contact-img"
+                  />
                 </div>
-            </div>
-        </section>
-        <section class="footer__bottom">
-            <div class="container">
-                <div class="row">
-                    <span class="footer__bottom-content">by Do Thanh Tuan</span>
+
+                <div class="footer__top-contact-phone-wrap">
+                  <div class="footer__top-contact-phone">0867.02.01.02</div>
+                  <div class="footer__top-contact-des">
+                    (Answer questions 24/7)
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
+
+              <h4 class="footer__top-contact-heading">Connect with us</h4>
+
+              <div class="footer__top-contact-social">
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/facebook.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/youtube.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/tiktok.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/zalo.png" />
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <span class="footer__bottom-content">by Do Thanh Tuan</span>
+          </div>
+        </div>
+      </section>
     </footer>
     <!-- end footer -->
     <script src="js/jq.js"></script>
-</body>
+  </body>
 </html>

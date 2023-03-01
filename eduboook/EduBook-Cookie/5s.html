@@ -1,895 +1,1135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5 Centimeters Per Second</title>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="shortcut icon" href="./images1/anhsach/logoRp1.jpg" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link
+      rel="shortcut icon"
+      href="./images1/anhsach/logoRp1.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- header -->
     <header id="header">
-        <!-- header top -->
-        <div class="header__top">
-            <div class="container">
-                <section class="row flex">
-                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
-                        <span>Rabbit Shiu - Buy books and get rich!</span>
-                    </div>
-
-                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
-                        <ul class="header__top-list">
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">
-
-                                    Q&A</a>
-                            </li>
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">Guide</a>
-                            </li>
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">Register</a>
-                            </li>
-                            <li class="header__top-item">
-                                <a href="#" class="header__top-link">Log in</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
+      <!-- header top -->
+      <div class="header__top">
+        <div class="container">
+          <section class="row flex">
+            <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+              <span>Rabbit Shiu - Buy books and get rich!</span>
+              <span>ThanhMinh Update</span>
             </div>
+
+            <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+              <ul class="header__top-list">
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link"> Q&A</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Guide</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Register</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Log in</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
         </div>
-        <!--end header top -->
+      </div>
+      <!--end header top -->
 
-        <!-- header bottom -->
-        <div class="header__bottom">
-            <div class="container">
-                <section class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
-                        <h1 class="header__heading">
-                            <a href="#" class="header__logo-link">
-                                <img src="./images1/anhsach/logoRp1.jpg" alt="Logo" class="header__logo-img">
-                            </a>
-                        </h1>
-                    </div>
-
-                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
-                        <select name="" id="" class="header__search-select">
-                            <option value="0">All</option>
-                            <option value="1">Vietnamese book</option>
-                            <option value="2">Foreign books</option>
-                            <option value="3">Manga-Comic</option>
-                            
-                        </select>
-                        <input type="text" class="header__search-input" placeholder="Search here...">
-                        <button class="header__search-btn">
-                            <div class="header__search-icon-wrap">
-                                <i class="fas fa-search header__search-icon"></i>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
-                        <div class="header__call-icon-wrap">
-                            <i class="fas fa-phone-alt header__call-icon"></i>  
-                        </div>
-                        <div class="header__call-info">
-                            <div class="header__call-text">
-                                Call for advice
-                            </div>
-                            <div class="header__call-number">
-                                0867.02.01.02
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
-                        <div class="header__cart-icon-wrap">
-                            <span class="header__notice">4</span>
-                            <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
-                        </div>
-                    </a>
-                </section>
-            </div>   
-        </div>
-        <!--end header bottom -->
-
-        <!-- header nav -->
-        <div class="header__nav">
-            <div class="container">
-                <section class="row">
-                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
-                        <i class="fas fa-bars header__nav-menu-icon"></i>
-                        <div class="header__nav-menu-title">Product portfolio</div>
-                    </div>
-
-                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item">
-                                <a href="index.html" class="header__nav-link">Home page</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="category.html" class="header__nav-link">Product portfolio</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="product.html" class="header__nav-link">Product</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="post.html" class="header__nav-link">Posts</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="contact.html" class="header__nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+      <!-- header bottom -->
+      <div class="header__bottom">
+        <div class="container">
+          <section class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+              <h1 class="header__heading">
+                <a href="#" class="header__logo-link">
+                  <img
+                    src="./images1/anhsach/logoRp1.jpg"
+                    alt="Logo"
+                    class="header__logo-img"
+                  />
+                </a>
+              </h1>
             </div>
+
+            <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+              <select name="" id="" class="header__search-select">
+                <option value="0">All</option>
+                <option value="1">Vietnamese book</option>
+                <option value="2">Foreign books</option>
+                <option value="3">Manga-Comic</option>
+              </select>
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="Search here..."
+              />
+              <button class="header__search-btn">
+                <div class="header__search-icon-wrap">
+                  <i class="fas fa-search header__search-icon"></i>
+                </div>
+              </button>
+            </div>
+
+            <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+              <div class="header__call-icon-wrap">
+                <i class="fas fa-phone-alt header__call-icon"></i>
+              </div>
+              <div class="header__call-info">
+                <div class="header__call-text">Call for advice</div>
+                <div class="header__call-number">0867.02.01.02</div>
+              </div>
+            </div>
+
+            <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
+              <div class="header__cart-icon-wrap">
+                <span class="header__notice">4</span>
+                <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+              </div>
+            </a>
+          </section>
         </div>
+      </div>
+      <!--end header bottom -->
+
+      <!-- header nav -->
+      <div class="header__nav">
+        <div class="container">
+          <section class="row">
+            <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+              <i class="fas fa-bars header__nav-menu-icon"></i>
+              <div class="header__nav-menu-title">Product portfolio</div>
+            </div>
+
+            <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="index.html" class="header__nav-link">Home page</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="category.html" class="header__nav-link"
+                    >Product portfolio</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="product.html" class="header__nav-link">Product</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="post.html" class="header__nav-link">Posts</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="contact.html" class="header__nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     </header>
     <!--end header nav -->
     <!-- score-top-->
 
-<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <button onclick="topFunction()" id="myBtn-scroll" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
     <!-- product -->
     <section class="product">
-        <div class="container">
-            <div class="row bg-white pt-4 pb-4 border-bt pc">
-                <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
-                    <ul class="menu__list">
-                        <li class="menu__item menu__item--active">
-                            <a href="#" class="menu__link">
-                            <img src="images1/item/baby-boy.png" alt=""  class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
-                            Vietnamese book</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                            <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
-                            Foreign books</a>
-                        </li>
-                      
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt="" class="menu__item-icon"  viewBox="0 0 512 512" width="1012" height="512">
+      <div class="container">
+        <div class="row bg-white pt-4 pb-4 border-bt pc">
+          <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link">
+                  <img
+                    src="images1/item/baby-boy.png"
+                    alt=""
+                    class="menu__item-icon"
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="512"
+                    viewBox="0 0 512 512"
+                    width="512"
+                  />
+                  Vietnamese book</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img
+                    src="images1/item/translation.png"
+                    alt=""
+                    class="menu__item-icon"
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="512"
+                    viewBox="0 0 512 512"
+                    width="512"
+                  />
+                  Foreign books</a
+                >
+              </li>
 
-                            Manga - Comic</a>
-                        </li>
-                      
-                    </ul>
-                </nav>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img
+                    src="images1/item/1380754_batman_comic_hero_superhero_icon.png"
+                    alt=""
+                    class="menu__item-icon"
+                    viewBox="0 0 512 512"
+                    width="1012"
+                    height="512"
+                  />
 
-                <article class="product__main col-lg-9 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
-                            <div class="product__main-img-primary">
-                                <img src="./images1/product/5s1.jpg">
-                            </div>
+                  Manga - Comic</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-                            <div class="product__main-img-list">
-                                <img src="./images1/product/5s2.jpg">
-                                <img src="./images1/product/5s3.jpg">
-                                <img src="./images1/product/5s4.jpg">
-                            </div>
-                        </div>
+          <article class="product__main col-lg-9 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
+                <div class="product__main-img-primary">
+                  <img src="./images1/product/5s1.jpg" />
+                </div>
 
-                        <div class="product__main-info col-lg-8 col-md-8 col-sm-12">
-                            <div class="product__main-info-breadcrumb">
-                                Home / Products
-                            </div>
-                            
-                            <a href="#" class="product__main-info-title">
-                                <h2 class="product__main-info-heading">
-                                    5 Centimeters Per Second 
-                                </h2>
-                            </a>
+                <div class="product__main-img-list">
+                  <img src="./images1/product/5s2.jpg" />
+                  <img src="./images1/product/5s3.jpg" />
+                  <img src="./images1/product/5s4.jpg" />
+                </div>
+              </div>
 
-                            <div class="product__main-info-rate-wrap">
-                                <i class="fas fa-star product__main-info-rate"></i>
-                                <i class="fas fa-star product__main-info-rate"></i>
-                                <i class="fas fa-star product__main-info-rate"></i>
-                                <i class="fas fa-star product__main-info-rate"></i>
-                                <i class="fas fa-star product__main-info-rate"></i>
-                            </div>
+              <div class="product__main-info col-lg-8 col-md-8 col-sm-12">
+                <div class="product__main-info-breadcrumb">Home / Products</div>
 
-                            <div class="product__main-info-price">
-                                <span class="product__main-info-price-current">
-                                    39.500đ
-                                </span>
-                            </div>
+                <a href="#" class="product__main-info-title">
+                  <h2 class="product__main-info-heading">
+                    5 Centimeters Per Second
+                  </h2>
+                </a>
 
-                            <div class="product__main-info-description">
-                                TOP 100 BEST SELLER - 5cm/s is not only the speed of falling cherry petals, but also the speed when we quietly pass each other's lives, losing the most passionate feelings of love.
-                            </div> 
-                            
+                <div class="product__main-info-rate-wrap">
+                  <i class="fas fa-star product__main-info-rate"></i>
+                  <i class="fas fa-star product__main-info-rate"></i>
+                  <i class="fas fa-star product__main-info-rate"></i>
+                  <i class="fas fa-star product__main-info-rate"></i>
+                  <i class="fas fa-star product__main-info-rate"></i>
+                </div>
 
-                            <div class="product__main-info-cart">
-                                <!--<div class="product__main-info-cart-quantity">
+                <div class="product__main-info-price">
+                  <span class="product__main-info-price-current">
+                    39.500đ
+                  </span>
+                </div>
+
+                <div class="product__main-info-description">
+                  TOP 100 BEST SELLER - 5cm/s is not only the speed of falling
+                  cherry petals, but also the speed when we quietly pass each
+                  other's lives, losing the most passionate feelings of love.
+                </div>
+
+                <div class="product__main-info-cart">
+                  <!--<div class="product__main-info-cart-quantity">
                                     <input type="button" value="-"  class="product__main-info-cart-quantity-minus">
                                     <input type="number" step="1" min="1" max="999" value="1" class="product__main-info-cart-quantity-total">
                                     <input type="button" value="+" class="product__main-info-cart-quantity-plus">
                                 </div>-->
-                                
-                                <div class="product__main-info-cart-btn-wrap">
-                                    <button class="product__main-info-cart-btn">
-                                        Add to cart
-                                    </button>
-                                </div>
-                            </div>
 
-                            <div class="product__main-info-contact">
-                                <a href="#" class="product__main-info-contact-fb">
-                                    <!-- <i class="fab fa-facebook-f"></i> -->
-                                    BUY NOW
-                                </a>
-                                <div class="product__main-info-contact-phone-wrap">
-                                    <!-- <div class="product__main-info-contact-phone-icon">
+                  <div class="product__main-info-cart-btn-wrap">
+                    <button class="product__main-info-cart-btn">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product__main-info-contact">
+                  <a href="#" class="product__main-info-contact-fb">
+                    <!-- <i class="fab fa-facebook-f"></i> -->
+                    BUY NOW
+                  </a>
+                  <div class="product__main-info-contact-phone-wrap">
+                    <!-- <div class="product__main-info-contact-phone-icon">
                                         <i class="fas fa-phone-alt "></i>
                                     </div> -->
-                                    
-                                    <div class="product__main-info-contact-phone">
-                                        <div class="product__main-info-contact-phone-title">
-                                            PROMOTION - OFFER
-                                        </div>
-                                      
-                                    </div>
 
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="product__main-info-contact-phone">
+                      <div class="product__main-info-contact-phone-title">
+                        PROMOTION - OFFER
+                      </div>
                     </div>
-
-                    <div class="row bg-white">
-                        <div class="col-12 product__main-tab">
-                            <a href="#" class="product__main-tab-link product__main-tab-link--active">
-                                Describe
-                            </a>
-                            <a href="#" class="product__main-tab-link">
-                                Evaluate
-                            </a>
-                        </div>
-
-                        <div class="col-12 product__main-content-wrap">
-                            <h2 class="product__main-content-heading">
-                                5 Centimeters Per Second
-                            </h2>
-                            <p>
-                                TOP 100 BEST SELLER - 5cm/s is not only the speed of falling cherry petals, but also the speed when we quietly pass each other's lives, losing the most passionate feelings of love.
-                            </p>
-                            <p>
-                                With a delicate, inspiring voice, Five Centimeters Per Second offers new depictions of the soul and the viability of emotions, starting with the pure, sweet love of a little girl and boy. Three stages, three pieces, three different storytellers but all revolve around the male protagonist, who is always haunted by memories and the past...
-                            </p>
-                            <p>
-                                Unlike the stories that keep you running in one go, this one is hard to read quickly. Your fingers would stop a hundred times on each page of the book. Just a very slight movement, a line, or a sudden emotion can awaken things that seem to have fallen asleep in your subconscious, like a light that has just been turned on in your mind. And then there are times when it gets too much to bear, you decide to close the book just to enjoy some light from the lamp, or simply let the wound in your heart have time to heal itself.
-                            </p>
-                            
-                            <p>To introduce the readers.</p>
-                            
-                            <h2 class="thongtin">    <span>Details</span> 
-                             </h2>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <tbody>
-                                            <tr>
-                                                <th>Issuing company</th>
-                                                <td>Vietnam Education Publishing House</td>
-                                            </tr>
-                                            <tr><th>Publication date</th><td>2019-03-15 11:47:36</td></tr>
-                                            <tr><th>Size</th><td>19 x 27 cm</td></tr>
-                                            <tr><th>Cover Type</th><td>Folding cover</td></tr>
-                                            <tr><th>Number of pages</th><td>168</td></tr>
-                                            <tr><th>SKU</th><td>4119626029817</td></tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                              
-                        
-                        </div>
-                        
-                    </div>
-                </article>
-
-                <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
-                    <div class="product__aside-top">
-                        <div class="product__aside-top-item">
-                            <img src="images/shipper.png">
-                            <div class="product__aside-top-item-text">
-                                <p>
-                                    Fast shipping
-                                </p>
-                                <span>
-                                    In just 24 hours
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product__aside-top-item">
-                            <img src="images/brand.png">
-                            <div class="product__aside-top-item-text">
-                                <p>
-                                    Genuine product
-                                </p>
-                                <span>
-                                    100% imported products
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product__aside-top-item">
-                            <img src="images/less.png">
-                            <div class="product__aside-top-item-text">
-                                <p>
-                                    Buy savings
-                                </p>
-                                <span>
-                                    10% to 30% cheaper
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__aside-bottom">
-                        <h3 class="product__aside-heading">
-                            Maybe you like
-                        </h3>
-
-                        <div class="product__aside-list">
-                            <div class="product__aside-item product__aside-item--border">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/image_227958.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading"> Stem/Steam Education : From Hands-on Experience to Thinking</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                            72.250
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/untitled-1_9_25_1.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">I Like Effortless Myself (Revised 2019)</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                            76.800đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/image_187163.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">Intense Childhood - Episode 2 (Reissue 2019)</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                          69.000đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/image_188285.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">The Story of the Cat that Teaches Seagulls to Fly</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                         34.300đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/8936186542176.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">I Like A Girl But Don't Dare To Say It</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                            70.000đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/biamem.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">Blue Bird Returns - Comes with 6</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                           112.500đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/8936049524905.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">5 Centimeters Per Second</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                            39.500đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="product__aside-item">
-                                <div class="product__aside-img-wrap">
-                                    <img src="images1/product/bia1_tobinhyen_2_1_1.jpg" class="product__aside-img">
-                                </div>
-                                <div class="product__aside-title">
-                                    <a href="#" class="product__aside-link">
-                                        <h4 class="product__aside-link-heading">To Binh Yen Draw Happiness</h4>
-                                    </a>
-
-                                    <div class="product__aside-rate-wrap">
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                        <i class="fas fa-star product__aside-rate"></i>
-                                    </div>
-
-                                    <div class="product__aside-price">
-                                        <span class="product__aside-price-current">
-                                           63.960đ
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-
+                  </div>
+                </div>
+              </div>
             </div>
-            
-           <div class="customer-reviews row pb-4 pb-4  py-4 pb-4 py-4 py-4">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h3 >Product Comments</h3>
-                <form id ="formgroupcomment" method="post">
-                    <div class="form-group">
-                        <label>Name:</label>
-                        <input name="comm_name" required="" type="text" id ='form-name' class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Email:</label>
-                        <input name="comm_mail" required="" type="email"  class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label>Content:</label>
-                        <textarea name="comm_details" required="" rows="8" id ='formcontent' class="form-control"></textarea>     
-                    </div>
-                    <button type="submit" name="sbm" id= "submitcomment" class="btn btn-primary">Send</button>
-                </form> 
-            </div>
-           </div>
-            
-           <div class="product-comment row pb-4 pb-4  py-4 pb-4 py-4 py-4">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="comment-item">
-                    <ul class = item-reviewer>
-                        <div class="comment-item-user">
-                            <img src="images/img/1.png" alt="" class="comment-item-user-img">
-                            
-                            <li><b>Thị Thu Hoài</b></li> 
-                         </div>
-                      
-                       <br>
-                        <li>03/03/2018 20:40:10</li>
-                        <li>
-                           <h4>“Hey, did you know… 5 cm/s is the speed at which cherry blossom petals fall?” The saying to start a sad love story revolves around the life of a boy named Takaki. 5cm/s is not only the speed of falling cherry blossom petals, but also the speed of people quietly walking through each other's lives, leaving behind their first love with all the flavors, emotions and seemingly fuzzy memories. pale and unforgettable. With a gentle voice, and subtly convey to the reader the story of reality without romanticizing. This is a book that gives you all the emotional frames on each page. Love goes from the innocence of childhood to the bitterness of experienced people. This is a book for people who are lonely, or simply feel like they want to slow down, want to find lightness and serenity for the soul. Let 5cm/s soothe you.</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="comment-item">
-                    <ul class = item-reviewer> 
-                    <div class="comment-item-user">
-                        <img src="images/img/2.png" alt="" class="comment-item-user-img">
-                        <li><b>Vân Anh</b></li> 
-                     </div>
-                   
-                       <br>
-                        <li>24/08/2020 12:20:10</li>
-                        <li>
-                           <h4>The first work of Shinkai Makoto that I read, it left an unforgettable impression on me. 5 centimeters per second is probably a book that everyone knows, always standing in the top oneshot bought a lot. Now the book is written by Kanoh Arata according to the original work of Shinkai Makoto, but this time the story is about the female lead's point of view that has been released by IPM. The IPM cover makes us feel bright and cheerful, but the content of the book is the opposite. I was very impressed with the cover of the Eng version because of its dark tone that evoked melancholy. The original 5 centimeter Japanese book is actually a very light cover but IPM changed the cover to the evening scene as the outer cover and the other picture is the inner cover of the book. The thickness of the book is twice that of the other book, it can be seen that the female lead has more emotions and thoughts. Although the ending is a bit sad but it left an impression in my heart, I will buy this whole book to be able to better understand the story of Takaki and Akari</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="comment-item">
-                    <ul class = item-reviewer>
-                    <div class="comment-item-user">
-                        <img src="images/img/5.png" alt="" class="comment-item-user-img">
-                        <li><b>Như</b></li> 
-                     </div>
-                    
-                        <br>
-                       
-                        <li>23/08/2020 10:48:20</li>
-                        <li>
-                           <h4>First I read novels, then I watch movies. It made me cry about part of it but of all the books that made me cry, this one was different. It's not like other books that will make you cry an ocean. After reading it, the story left a heavy mark on my heart. yes, it's painful and depressing at the same time. The sad consequences will make you think about life and about the power of time and distance to disconnect people once the bond is strong. I can totally relate to his (Takaki) feelings...it's hard to love someone who is so far away from you. it's hard to endure a world without someone and try your best to occupy your mind with different things but at the end of the day you still think about someone. Somehow, later on, we will meet a lot of people who will put you in different emotions, but in the end, no matter how many people you meet who make you happy and give you a lot of experience, there is only one who can fill the holes in your heart..</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="comment-item">
-                    <ul class = item-reviewer> 
-                    <div class="comment-item-user">
-                        <img src="images/img/6.png" alt="" class="comment-item-user-img">
-                        <li><b>Linh Nguyen</b></li> 
-                     </div>
-                        <br>
-                    
-                        <li>23/10/2018 20:40:18</li>
-                        <li>
-                           <h4>The first impression when holding the book is that the cover is super beautiful and romantic, the outer cover is a story and the inner cover is another story, both are beautiful and have a sad feeling. "5 centimeters per second" is divided into 3 parts with 3 different stories about the life of the male protagonist Toono Takaki. The beginning is a very pure, gentle and romantic first love story that everyone seems to have experienced. Takaki and Akari have been together all the time when they were innocent children from 4th grade to 8th grade. The two people are similar in soul and personality. The love story is associated with a romantic, profound, haunting image of cherry blossoms. The second story is told through the narration of Takaki's high school classmate - Kanae. Kanae has had a crush on her classmate for a long time and has been quietly observing him. But Takaki always kept a certain distance from Kanae, not far, not near, enough for Kanae to understand that his feelings were not in her. The story evokes feelings of sadness and quiet moments, because Takaki can't forget the past, he missed the opportunity to come to his love. The last story is when Takaki has grown up and gone to work. He still can't forget his first love and always seems to want to find someone like that girl. That's why it seems that none of his relationships can last... 5cm/s is told by the author in slow narration, causing readers to slow down to ponder each word. The author's psychological description is extremely subtle and profound, which seems to make the pain and gentle emotions more deeply ingrained in the reader's heart.</h4>
-                        </li>
-                    </ul>
-                </div>
-                
-                
-            </div>
-           </div>
-           
-           <section class="product__love col-12 mt-4">
+
             <div class="row bg-white">
-            <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
-                <h2 class="product__love-heading">
-                    Similar product
+              <div class="col-12 product__main-tab">
+                <a
+                  href="#"
+                  class="product__main-tab-link product__main-tab-link--active"
+                >
+                  Describe
+                </a>
+                <a href="#" class="product__main-tab-link"> Evaluate </a>
+              </div>
+
+              <div class="col-12 product__main-content-wrap">
+                <h2 class="product__main-content-heading">
+                  5 Centimeters Per Second
                 </h2>
+                <p>
+                  TOP 100 BEST SELLER - 5cm/s is not only the speed of falling
+                  cherry petals, but also the speed when we quietly pass each
+                  other's lives, losing the most passionate feelings of love.
+                </p>
+                <p>
+                  With a delicate, inspiring voice, Five Centimeters Per Second
+                  offers new depictions of the soul and the viability of
+                  emotions, starting with the pure, sweet love of a little girl
+                  and boy. Three stages, three pieces, three different
+                  storytellers but all revolve around the male protagonist, who
+                  is always haunted by memories and the past...
+                </p>
+                <p>
+                  Unlike the stories that keep you running in one go, this one
+                  is hard to read quickly. Your fingers would stop a hundred
+                  times on each page of the book. Just a very slight movement, a
+                  line, or a sudden emotion can awaken things that seem to have
+                  fallen asleep in your subconscious, like a light that has just
+                  been turned on in your mind. And then there are times when it
+                  gets too much to bear, you decide to close the book just to
+                  enjoy some light from the lamp, or simply let the wound in
+                  your heart have time to heal itself.
+                </p>
+
+                <p>To introduce the readers.</p>
+
+                <h2 class="thongtin"><span>Details</span></h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th>Issuing company</th>
+                        <td>Vietnam Education Publishing House</td>
+                      </tr>
+                      <tr>
+                        <th>Publication date</th>
+                        <td>2019-03-15 11:47:36</td>
+                      </tr>
+                      <tr>
+                        <th>Size</th>
+                        <td>19 x 27 cm</td>
+                      </tr>
+                      <tr>
+                        <th>Cover Type</th>
+                        <td>Folding cover</td>
+                      </tr>
+                      <tr>
+                        <th>Number of pages</th>
+                        <td>168</td>
+                      </tr>
+                      <tr>
+                        <th>SKU</th>
+                        <td>4119626029817</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="row bg-white">
-            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
-                <div class="product__panel-img-wrap">
-                    <img src="images1/product/image_189077.jpg" alt="" class="product__panel-img">
-                </div>
-                <h3 class="product__panel-heading">
-                    <a href="#" class="product__panel-link">Psychology - An Overview of Big Thoughts</a>
-                </h3>
-                <div class="product__panel-rate-wrap">
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                </div>
+          </article>
 
-                <div class="product__panel-price">
-                    <span class="product__panel-price-old product__panel-price-old-hide">
-                     300.000đ
-                    </span>
-                    <span class="product__panel-price-current">
-                        273.000đ
-                    </span>
-                </div>  
-            </div>
-
-            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
-                <div class="product__panel-img-wrap">
-                    <img src="images1/product/camnangppsupham.u84.d20161125.t123417.884704.jpg" alt="" class="product__panel-img">
+          <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
+            <div class="product__aside-top">
+              <div class="product__aside-top-item">
+                <img src="images/shipper.png" />
+                <div class="product__aside-top-item-text">
+                  <p>Fast shipping</p>
+                  <span> In just 24 hours </span>
                 </div>
-                <h3 class="product__panel-heading">
-                    <a href="#" class="product__panel-link">Handbook of Pedagogical Methods (2020 Edition)</a>
-                </h3>
-                <div class="product__panel-rate-wrap">
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
+              </div>
+              <div class="product__aside-top-item">
+                <img src="images/brand.png" />
+                <div class="product__aside-top-item-text">
+                  <p>Genuine product</p>
+                  <span> 100% imported products </span>
                 </div>
-
-                <div class="product__panel-price">
-                    <span class="product__panel-price-old product__panel-price-old-hide">
-                       150.000đ
-                    </span>
-                    <span class="product__panel-price-current">
-                        120.000đ
-                    </span>
-                </div> 
-            </div>
-
-            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
-                <div class="product__panel-img-wrap">
-                    <img src="images1/product/image_197655.jpg" alt="" class="product__panel-img">
+              </div>
+              <div class="product__aside-top-item">
+                <img src="images/less.png" />
+                <div class="product__aside-top-item-text">
+                  <p>Buy savings</p>
+                  <span> 10% to 30% cheaper </span>
                 </div>
-                <h3 class="product__panel-heading">
-                    <a href="#" class="product__panel-link">STEM- Super Simple Engineering</a>
-                </h3>
-                <div class="product__panel-rate-wrap">
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                </div>
-
-                <div class="product__panel-price">
-                    <span class="product__panel-price-old product__panel-price-old-hide 
-                    ">
-                       50.000đ
-                    </span>
-                    <span class="product__panel-price-current">
-                        47.200đ
-                    </span>
-                </div>
-            </div>
-            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
-                <div class="product__panel-img-wrap">
-                    <img src="images1/product/9786045890332.jpg" alt="" class="product__panel-img">
-                </div>
-                <h3 class="product__panel-heading">
-                    <a href="#" class="product__panel-link">A Guide to Learning and Research Thinking..</a>
-                </h3>
-                <div class="product__panel-rate-wrap">
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                </div>
-
-                <div class="product__panel-price">
-                    <span class="product__panel-price-old product__panel-price-old-hide">
-                       30.000đ
-                    </span>
-                    <span class="product__panel-price-current">
-                       24.000đ
-                    </span>
-                </div> 
+              </div>
             </div>
 
-            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
-                <div class="product__panel-img-wrap">
-                    <img src="images1/product/image_195509_1_21191.jpg" alt="" class="product__panel-img" width="110">
-                </div>
-                <h3 class="product__panel-heading">
-                    <a href="#" class="product__panel-link">The Jewish Doctrine of the Child<br>
-                        
+            <div class="product__aside-bottom">
+              <h3 class="product__aside-heading">Maybe you like</h3>
+
+              <div class="product__aside-list">
+                <div class="product__aside-item product__aside-item--border">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/image_227958.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        Stem/Steam Education : From Hands-on Experience to
+                        Thinking
+                      </h4>
                     </a>
-                </h3>
-                <div class="product__panel-rate-wrap">
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current"> 72.250 </span>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="product__panel-price">
-                    <span class="product__panel-price-old product__panel-price-old-hide">
-                       62.000đ
-                    </span>
-                    <span class="product__panel-price-current">
-                        37.200đ
-                    </span>
-                </div> 
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/untitled-1_9_25_1.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        I Like Effortless Myself (Revised 2019)
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        76.800đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/image_187163.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        Intense Childhood - Episode 2 (Reissue 2019)
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        69.000đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/image_188285.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        The Story of the Cat that Teaches Seagulls to Fly
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        34.300đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/8936186542176.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        I Like A Girl But Don't Dare To Say It
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        70.000đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/biamem.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        Blue Bird Returns - Comes with 6
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        112.500đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/8936049524905.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        5 Centimeters Per Second
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        39.500đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__aside-item">
+                  <div class="product__aside-img-wrap">
+                    <img
+                      src="images1/product/bia1_tobinhyen_2_1_1.jpg"
+                      class="product__aside-img"
+                    />
+                  </div>
+                  <div class="product__aside-title">
+                    <a href="#" class="product__aside-link">
+                      <h4 class="product__aside-link-heading">
+                        To Binh Yen Draw Happiness
+                      </h4>
+                    </a>
+
+                    <div class="product__aside-rate-wrap">
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                      <i class="fas fa-star product__aside-rate"></i>
+                    </div>
+
+                    <div class="product__aside-price">
+                      <span class="product__aside-price-current">
+                        63.960đ
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="customer-reviews row pb-4 pb-4 py-4 pb-4 py-4 py-4">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3>Product Comments</h3>
+            <form id="formgroupcomment" method="post">
+              <div class="form-group">
+                <label>Name:</label>
+                <input
+                  name="comm_name"
+                  required=""
+                  type="text"
+                  id="form-name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label>Email:</label>
+                <input
+                  name="comm_mail"
+                  required=""
+                  type="email"
+                  class="form-control"
+                  id="pwd"
+                />
+              </div>
+              <div class="form-group">
+                <label>Content:</label>
+                <textarea
+                  name="comm_details"
+                  required=""
+                  rows="8"
+                  id="formcontent"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                name="sbm"
+                id="submitcomment"
+                class="btn btn-primary"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="product-comment row pb-4 pb-4 py-4 pb-4 py-4 py-4">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="comment-item">
+              <ul class="item-reviewer">
+                <div class="comment-item-user">
+                  <img
+                    src="images/img/1.png"
+                    alt=""
+                    class="comment-item-user-img"
+                  />
+
+                  <li><b>Thị Thu Hoài</b></li>
+                </div>
+
+                <br />
+                <li>03/03/2018 20:40:10</li>
+                <li>
+                  <h4>
+                    “Hey, did you know… 5 cm/s is the speed at which cherry
+                    blossom petals fall?” The saying to start a sad love story
+                    revolves around the life of a boy named Takaki. 5cm/s is not
+                    only the speed of falling cherry blossom petals, but also
+                    the speed of people quietly walking through each other's
+                    lives, leaving behind their first love with all the flavors,
+                    emotions and seemingly fuzzy memories. pale and
+                    unforgettable. With a gentle voice, and subtly convey to the
+                    reader the story of reality without romanticizing. This is a
+                    book that gives you all the emotional frames on each page.
+                    Love goes from the innocence of childhood to the bitterness
+                    of experienced people. This is a book for people who are
+                    lonely, or simply feel like they want to slow down, want to
+                    find lightness and serenity for the soul. Let 5cm/s soothe
+                    you.
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div class="comment-item">
+              <ul class="item-reviewer">
+                <div class="comment-item-user">
+                  <img
+                    src="images/img/2.png"
+                    alt=""
+                    class="comment-item-user-img"
+                  />
+                  <li><b>Vân Anh</b></li>
+                </div>
+
+                <br />
+                <li>24/08/2020 12:20:10</li>
+                <li>
+                  <h4>
+                    The first work of Shinkai Makoto that I read, it left an
+                    unforgettable impression on me. 5 centimeters per second is
+                    probably a book that everyone knows, always standing in the
+                    top oneshot bought a lot. Now the book is written by Kanoh
+                    Arata according to the original work of Shinkai Makoto, but
+                    this time the story is about the female lead's point of view
+                    that has been released by IPM. The IPM cover makes us feel
+                    bright and cheerful, but the content of the book is the
+                    opposite. I was very impressed with the cover of the Eng
+                    version because of its dark tone that evoked melancholy. The
+                    original 5 centimeter Japanese book is actually a very light
+                    cover but IPM changed the cover to the evening scene as the
+                    outer cover and the other picture is the inner cover of the
+                    book. The thickness of the book is twice that of the other
+                    book, it can be seen that the female lead has more emotions
+                    and thoughts. Although the ending is a bit sad but it left
+                    an impression in my heart, I will buy this whole book to be
+                    able to better understand the story of Takaki and Akari
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div class="comment-item">
+              <ul class="item-reviewer">
+                <div class="comment-item-user">
+                  <img
+                    src="images/img/5.png"
+                    alt=""
+                    class="comment-item-user-img"
+                  />
+                  <li><b>Như</b></li>
+                </div>
+
+                <br />
+
+                <li>23/08/2020 10:48:20</li>
+                <li>
+                  <h4>
+                    First I read novels, then I watch movies. It made me cry
+                    about part of it but of all the books that made me cry, this
+                    one was different. It's not like other books that will make
+                    you cry an ocean. After reading it, the story left a heavy
+                    mark on my heart. yes, it's painful and depressing at the
+                    same time. The sad consequences will make you think about
+                    life and about the power of time and distance to disconnect
+                    people once the bond is strong. I can totally relate to his
+                    (Takaki) feelings...it's hard to love someone who is so far
+                    away from you. it's hard to endure a world without someone
+                    and try your best to occupy your mind with different things
+                    but at the end of the day you still think about someone.
+                    Somehow, later on, we will meet a lot of people who will put
+                    you in different emotions, but in the end, no matter how
+                    many people you meet who make you happy and give you a lot
+                    of experience, there is only one who can fill the holes in
+                    your heart..
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div class="comment-item">
+              <ul class="item-reviewer">
+                <div class="comment-item-user">
+                  <img
+                    src="images/img/6.png"
+                    alt=""
+                    class="comment-item-user-img"
+                  />
+                  <li><b>Linh Nguyen</b></li>
+                </div>
+                <br />
+
+                <li>23/10/2018 20:40:18</li>
+                <li>
+                  <h4>
+                    The first impression when holding the book is that the cover
+                    is super beautiful and romantic, the outer cover is a story
+                    and the inner cover is another story, both are beautiful and
+                    have a sad feeling. "5 centimeters per second" is divided
+                    into 3 parts with 3 different stories about the life of the
+                    male protagonist Toono Takaki. The beginning is a very pure,
+                    gentle and romantic first love story that everyone seems to
+                    have experienced. Takaki and Akari have been together all
+                    the time when they were innocent children from 4th grade to
+                    8th grade. The two people are similar in soul and
+                    personality. The love story is associated with a romantic,
+                    profound, haunting image of cherry blossoms. The second
+                    story is told through the narration of Takaki's high school
+                    classmate - Kanae. Kanae has had a crush on her classmate
+                    for a long time and has been quietly observing him. But
+                    Takaki always kept a certain distance from Kanae, not far,
+                    not near, enough for Kanae to understand that his feelings
+                    were not in her. The story evokes feelings of sadness and
+                    quiet moments, because Takaki can't forget the past, he
+                    missed the opportunity to come to his love. The last story
+                    is when Takaki has grown up and gone to work. He still can't
+                    forget his first love and always seems to want to find
+                    someone like that girl. That's why it seems that none of his
+                    relationships can last... 5cm/s is told by the author in
+                    slow narration, causing readers to slow down to ponder each
+                    word. The author's psychological description is extremely
+                    subtle and profound, which seems to make the pain and gentle
+                    emotions more deeply ingrained in the reader's heart.
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="product__love col-12 mt-4">
+          <div class="row bg-white">
+            <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+              <h2 class="product__love-heading">Similar product</h2>
+            </div>
+          </div>
+          <div class="row bg-white">
+            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+              <div class="product__panel-img-wrap">
+                <img
+                  src="images1/product/image_189077.jpg"
+                  alt=""
+                  class="product__panel-img"
+                />
+              </div>
+              <h3 class="product__panel-heading">
+                <a href="#" class="product__panel-link"
+                  >Psychology - An Overview of Big Thoughts</a
+                >
+              </h3>
+              <div class="product__panel-rate-wrap">
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+              </div>
+
+              <div class="product__panel-price">
+                <span
+                  class="product__panel-price-old product__panel-price-old-hide"
+                >
+                  300.000đ
+                </span>
+                <span class="product__panel-price-current"> 273.000đ </span>
+              </div>
             </div>
 
             <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
-                <div class="product__panel-img-wrap">
-                    <img src="images1/product/image_227958.jpg" alt="" class="product__panel-img" >
-                </div>
-                <h3 class="product__panel-heading">
-                    <a href="#" class="product__panel-link">Stem/Steam Education: From Hands-on Experience..
-                    </a>
-                </h3>
-                <div class="product__panel-rate-wrap">
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                    <i class="fas fa-star product__panel-rate"></i>
-                </div>
+              <div class="product__panel-img-wrap">
+                <img
+                  src="images1/product/camnangppsupham.u84.d20161125.t123417.884704.jpg"
+                  alt=""
+                  class="product__panel-img"
+                />
+              </div>
+              <h3 class="product__panel-heading">
+                <a href="#" class="product__panel-link"
+                  >Handbook of Pedagogical Methods (2020 Edition)</a
+                >
+              </h3>
+              <div class="product__panel-rate-wrap">
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+              </div>
 
-                <div class="product__panel-price">
-                    <span class="product__panel-price-old product__panel-price-old-hide">
-                        85.000đ
-                    </span>
-                    <span class="product__panel-price-current">
-                        72.250đ
-                    </span>
-                </div> 
+              <div class="product__panel-price">
+                <span
+                  class="product__panel-price-old product__panel-price-old-hide"
+                >
+                  150.000đ
+                </span>
+                <span class="product__panel-price-current"> 120.000đ </span>
+              </div>
             </div>
-        </div>
+
+            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+              <div class="product__panel-img-wrap">
+                <img
+                  src="images1/product/image_197655.jpg"
+                  alt=""
+                  class="product__panel-img"
+                />
+              </div>
+              <h3 class="product__panel-heading">
+                <a href="#" class="product__panel-link"
+                  >STEM- Super Simple Engineering</a
+                >
+              </h3>
+              <div class="product__panel-rate-wrap">
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+              </div>
+
+              <div class="product__panel-price">
+                <span
+                  class="product__panel-price-old product__panel-price-old-hide"
+                >
+                  50.000đ
+                </span>
+                <span class="product__panel-price-current"> 47.200đ </span>
+              </div>
+            </div>
+            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+              <div class="product__panel-img-wrap">
+                <img
+                  src="images1/product/9786045890332.jpg"
+                  alt=""
+                  class="product__panel-img"
+                />
+              </div>
+              <h3 class="product__panel-heading">
+                <a href="#" class="product__panel-link"
+                  >A Guide to Learning and Research Thinking..</a
+                >
+              </h3>
+              <div class="product__panel-rate-wrap">
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+              </div>
+
+              <div class="product__panel-price">
+                <span
+                  class="product__panel-price-old product__panel-price-old-hide"
+                >
+                  30.000đ
+                </span>
+                <span class="product__panel-price-current"> 24.000đ </span>
+              </div>
+            </div>
+
+            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+              <div class="product__panel-img-wrap">
+                <img
+                  src="images1/product/image_195509_1_21191.jpg"
+                  alt=""
+                  class="product__panel-img"
+                  width="110"
+                />
+              </div>
+              <h3 class="product__panel-heading">
+                <a href="#" class="product__panel-link"
+                  >The Jewish Doctrine of the Child<br />
+                </a>
+              </h3>
+              <div class="product__panel-rate-wrap">
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+              </div>
+
+              <div class="product__panel-price">
+                <span
+                  class="product__panel-price-old product__panel-price-old-hide"
+                >
+                  62.000đ
+                </span>
+                <span class="product__panel-price-current"> 37.200đ </span>
+              </div>
+            </div>
+
+            <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+              <div class="product__panel-img-wrap">
+                <img
+                  src="images1/product/image_227958.jpg"
+                  alt=""
+                  class="product__panel-img"
+                />
+              </div>
+              <h3 class="product__panel-heading">
+                <a href="#" class="product__panel-link"
+                  >Stem/Steam Education: From Hands-on Experience..
+                </a>
+              </h3>
+              <div class="product__panel-rate-wrap">
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+                <i class="fas fa-star product__panel-rate"></i>
+              </div>
+
+              <div class="product__panel-price">
+                <span
+                  class="product__panel-price-old product__panel-price-old-hide"
+                >
+                  85.000đ
+                </span>
+                <span class="product__panel-price-current"> 72.250đ </span>
+              </div>
+            </div>
+          </div>
         </section>
-    </div>
-</section>
-<!--product -->
-
-<!-- footer -->
-<footer>
-    <section class="footer__top">
-        <div class="container">
-            <div class="row">
-                <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
-                    <h4 class="footer__top-intro-heading">
-                        About us
-                    </h4>
-                    <div class="footer__top-intro-content">
-                        Rabbit - Shiu is a store that always provides you with knowledge, knowledge and passion for reading all over the country. We will continuously update the best, newest and best quality books to help readers have the best ideas. Best book to read! <br> <br>
-                        Phone: 0867.02.01.02 <br>
-                        Email: tuanthanhdo2002@gmail.com <br>
-                        Zalo:  0862.566.849 <br>
-                    </div>
-                </article>
-
-                <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
-                    <h4 class="footer__top-policy-heading">
-                        Purchase Policy
-                    </h4>
-
-                    <ul class="footer__top-policy-list">
-                        <li class="footer__top-policy-item">
-                            <a href="#" class="footer__top-policy-link">Order form</a>
-                        </li>
-                        <li class="footer__top-policy-item">
-                            <a href="#" class="footer__top-policy-link">Payments</a>
-                        </li>
-                        <li class="footer__top-policy-item">
-                            <a href="#" class="footer__top-policy-link">Shipping method</a>
-                        </li>
-                        <li class="footer__top-policy-item">
-                            <a href="#" class="footer__top-policy-link">Return Policy</a>
-                        </li>
-                        <li class="footer__top-policy-item">
-                            <a href="#" class="footer__top-policy-link">User manual</a>
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
-                    <h4 class="footer__top-contact-heading">
-                        Hotline contact
-                    </h4>
-
-                    <div class="footer__top-contact">
-                        <div class="footer__top-contact-icon">
-                            <img src="images/phone_top.png" class="footer__top-contact-img">
-                        </div>
-
-                        <div class="footer__top-contact-phone-wrap">
-                            <div class="footer__top-contact-phone">
-                                0867.02.01.02
-                            </div>
-                            <div class="footer__top-contact-des">
-                                (Answer questions 24/7)
-                            </div>
-                        </div>
-                    </div>
-                
-                    <h4 class="footer__top-contact-heading">
-                        Connect with us
-                    </h4>
-
-                    <div class="footer__top-contact-social">
-                        <a href="#" class="footer__top-contact-social-link">
-                            <img src="images/facebook.png">
-                        </a>
-                        <a href="#" class="footer__top-contact-social-link">
-                            <img src="images/youtube.png">
-                        </a>
-                        <a href="#" class="footer__top-contact-social-link">
-                            <img src="images/tiktok.png">
-                        </a>
-                        <a href="#" class="footer__top-contact-social-link">
-                            <img src="images/zalo.png">
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </div>
+      </div>
     </section>
-    <section class="footer__bottom">
+    <!--product -->
+
+    <!-- footer -->
+    <footer>
+      <section class="footer__top">
         <div class="container">
-            <div class="row">
-                <span class="footer__bottom-content">by Do Thanh Tuan</span>
-            </div>
+          <div class="row">
+            <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+              <h4 class="footer__top-intro-heading">About us</h4>
+              <div class="footer__top-intro-content">
+                Rabbit - Shiu is a store that always provides you with
+                knowledge, knowledge and passion for reading all over the
+                country. We will continuously update the best, newest and best
+                quality books to help readers have the best ideas. Best book to
+                read! <br />
+                <br />
+                Phone: 0867.02.01.02 <br />
+                Email: tuanthanhdo2002@gmail.com <br />
+                Zalo: 0862.566.849 <br />
+              </div>
+            </article>
+
+            <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+              <h4 class="footer__top-policy-heading">Purchase Policy</h4>
+
+              <ul class="footer__top-policy-list">
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">Order form</a>
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">Payments</a>
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Shipping method</a
+                  >
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">Return Policy</a>
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link">User manual</a>
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6"
+            >
+              <h4 class="footer__top-contact-heading">Hotline contact</h4>
+
+              <div class="footer__top-contact">
+                <div class="footer__top-contact-icon">
+                  <img
+                    src="images/phone_top.png"
+                    class="footer__top-contact-img"
+                  />
+                </div>
+
+                <div class="footer__top-contact-phone-wrap">
+                  <div class="footer__top-contact-phone">0867.02.01.02</div>
+                  <div class="footer__top-contact-des">
+                    (Answer questions 24/7)
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="footer__top-contact-heading">Connect with us</h4>
+
+              <div class="footer__top-contact-social">
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/facebook.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/youtube.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/tiktok.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="images/zalo.png" />
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
-</footer>
+      </section>
+      <section class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <span class="footer__bottom-content">by Do Thanh Tuan</span>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!-- end footer -->
 
     <script src="js/jq.js"></script>
     <script src="js/product.js"></script>
-        
-</body>
-</html> 
+  </body>
+</html>
